@@ -1,0 +1,9 @@
+---
+
+# user that generates tickets on other's behalf
+mapr_admin_username: mapr
+
+# default service ticket duration = 1 year
+duration: "365:0:0"
+
+maprlogin_username: 

@@ -8,7 +8,7 @@
 - name: obtain a MapR service ticket for a user
   sudo: yes
   sudo_user: "{{mapr_admin_username}}"
-  shell: maprlogin generateticket -type service -user {{maprlogin_username}} -out /tmp/maprticket_{{uid.stdout}} -duration {{duration}}
+  command: maprlogin generateticket -type service -user {{maprlogin_username}} -out /tmp/maprticket_{{uid.stdout}} -duration {{duration}}
   args:
     creates: /tmp/maprticket_{{uid.stdout}}
 
